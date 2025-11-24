@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS financial_literacy;
+USE financial_literacy;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    is_paid TINYINT(1) DEFAULT 0 NULL,
+    PRIMARY KEY (id)
+);

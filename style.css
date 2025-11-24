@@ -1,0 +1,15 @@
+
+
+
+concept-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+concept-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
